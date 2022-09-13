@@ -1,14 +1,16 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Button} from 'react-native';
+import styles from '../Styles/StylesInicio';
 
 const Inicio = () => {
     return (
-        <View>
-            
+        <View style={styles.container}>
+            <Text>Inicio</Text>
+            <Button
+                title='Ir a nosotros'
+            />
         </View>
     );
 }
-
-const styles = StyleSheet.create({})
 
 export default Inicio;
