@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-
+import Inicio from './src/Views/Inicio';
+import Nosotros from './src/Views/Nosotros';
 
 
 //React Navigation
@@ -13,8 +14,17 @@ export default function App() {
     <>
       <NavigationContainer>
 
-        <Stack.Navigator>
-          
+        <Stack.Navigator
+          inicialRouteName='Inicio'
+        >
+          <Stack.Screen
+            name='Inicio'
+            component={Inicio}
+          />
+          <Stack.Screen
+            name='Nosotros'
+            component={Nosotros}
+          />
         </Stack.Navigator>
 
       </NavigationContainer>
