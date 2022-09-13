@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Button} from 'react-native';
+import {View, Button} from 'react-native';
 import styles from '../Styles/StylesInicio';
 
 const Inicio = ({navigation}) => {
