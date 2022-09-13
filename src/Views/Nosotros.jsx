@@ -2,7 +2,9 @@ import React from 'react';
 import {Text, View, StatusBar} from 'react-native';
 import styles from '../Styles/StylesInicio';
 
-const Nosotros = ({navigation}) => {
+const Nosotros = ({navigation, route}) => {
+
+    const {clienteID} = route.params;
     const volver = ()=>{
         navigation.navigate('Inicio');
         //navigation.goBack();
@@ -11,7 +13,7 @@ const Nosotros = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-            <Text>Notros</Text>
+            <Text>{clienteID}</Text>
             <Button
                 title='Volver'
                 onPress={()=> volver()}

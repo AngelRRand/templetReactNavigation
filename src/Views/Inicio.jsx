@@ -4,8 +4,13 @@ import styles from '../Styles/StylesInicio';
 
 const Inicio = ({navigation}) => {
 
+    const info = {
+        clienteID:30,
+        totalPagar: 500
+    }
+
     const irNosotros = ()=>{
-        navigation.navigate('Nosotros')
+        navigation.navigate('Nosotros', info)
     }
 
     return (
