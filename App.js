@@ -21,7 +21,10 @@ export default function App() {
             name='Inicio'
             component={Inicio}
             options={{
-              title: 'Componente Principal'
+              title: 'Componente Principal',
+              headerStyle:{
+                backgroundColor:'#F4511E'
+              }
             }}
           />
           <Stack.Screen
